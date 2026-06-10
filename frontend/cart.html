@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PowerPlay Sports | Cart</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.cart-page{
+padding:120px 50px;
+min-height:100vh;
+}
+
+.cart-page h1{
+text-align:center;
+margin-bottom:40px;
+color:#22C55E;
+}
+
+.cart-container{
+max-width:1000px;
+margin:auto;
+}
+
+.cart-item{
+background:#111827;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.cart-item h3{
+color:white;
+}
+
+.cart-item p{
+color:#cbd5e1;
+}
+
+.remove-btn{
+background:red;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.total-section{
+background:#111827;
+padding:25px;
+border-radius:15px;
+margin-top:30px;
+text-align:center;
+}
+
+.total-section h2{
+color:#22C55E;
+margin-bottom:15px;
+}
+
+.checkout-btn{
+background:#22C55E;
+color:white;
+border:none;
+padding:15px 25px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.clear-btn{
+background:#ef4444;
+color:white;
+border:none;
+padding:15px 25px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+margin-top:10px;
+margin-left:10px;
+}
+
+.empty-cart{
+text-align:center;
+font-size:22px;
+margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body class="page-background">
+
+<nav class="navbar">
+
+<div class="logo">
+🏏 PowerPlay Sports
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="offers.html">Offers</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li id="userSection"></li>
+
+</ul>
+
+</nav>
+
+<section class="cart-page">
+
+<h1>🛒 Your Cart</h1>
+
+<div id="cartContainer" class="cart-container">
+
+</div>
+
+</section>
+
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/user.js"></script>
+
+</body>
+</html>

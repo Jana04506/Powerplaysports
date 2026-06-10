@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PowerPlay Sports | Signup</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.auth-container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.auth-card{
+width:450px;
+background:#111827;
+padding:40px;
+border-radius:15px;
+}
+
+.auth-card h1{
+text-align:center;
+margin-bottom:25px;
+color:#22C55E;
+}
+
+.auth-card input{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+background:#1e293b;
+color:white;
+}
+
+.auth-card button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:10px;
+background:#22C55E;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.auth-card button:hover{
+background:#16a34a;
+}
+
+.auth-card p{
+text-align:center;
+margin-top:15px;
+}
+
+.auth-card a{
+color:#22C55E;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body class="page-background">
+<div class="auth-container">
+
+<div class="auth-card">
+
+<h1>Create Account</h1>
+
+<form id="signupForm">
+
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required
+>
+
+<input
+type="email"
+id="email"
+placeholder="Email"
+required
+>
+
+<input
+type="password"
+id="password"
+placeholder="Password"
+required
+>
+
+<button type="submit">
+Sign Up
+</button>
+
+</form>
+
+<p>
+Already have an account?
+
+<a href="login.html">
+Login
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

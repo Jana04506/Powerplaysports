@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PowerPlay Sports | Offers</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.offers-page{
+padding:120px 50px;
+text-align:center;
+}
+
+.offers-page h1{
+font-size:50px;
+margin-bottom:20px;
+color:#22C55E;
+}
+
+.offers-page p{
+font-size:20px;
+color:#cbd5e1;
+margin-bottom:40px;
+}
+
+.flash-sale{
+background:linear-gradient(90deg,#22C55E,#16a34a);
+padding:25px;
+border-radius:15px;
+margin-bottom:50px;
+color:white;
+font-size:24px;
+font-weight:bold;
+}
+
+.coupon-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.coupon-card{
+background:#111827;
+padding:30px;
+border-radius:15px;
+border:1px solid #22C55E;
+transition:.3s;
+}
+
+.coupon-card:hover{
+transform:translateY(-8px);
+}
+
+.coupon-card h2{
+color:#22C55E;
+margin-bottom:15px;
+}
+
+.coupon-card p{
+margin-bottom:20px;
+}
+
+.coupon-card button{
+background:#22C55E;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.special-offers{
+margin-top:80px;
+}
+
+.offer-boxes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.offer-box{
+background:#111827;
+padding:25px;
+border-radius:15px;
+}
+
+.offer-box h3{
+color:#22C55E;
+margin-bottom:10px;
+}
+
+</style>
+
+</head>
+
+<body class="page-background">
+<!-- PRELOADER -->
+
+<div id="preloader">
+
+<div class="loader-content">
+
+<div class="loader-circle"></div>
+
+<h1>🏏 PowerPlay Sports</h1>
+
+<p>Loading...</p>
+
+</div>
+
+</div>
+<nav class="navbar">
+
+<div class="logo">
+🏏 PowerPlay Sports
+</div>
+
+<ul class="nav-links">
+<li><a href="cart.html">Cart</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="offers.html">Offers</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li id="userSection"></li>
+
+</ul>
+
+</nav>
+
+<section class="offers-page">
+
+<h1>🔥 Mega Sports Deals</h1>
+
+<p>
+Save more on your favorite cricket equipment.
+Limited-time offers available now.
+</p>
+
+<div class="flash-sale">
+⚡ FLASH SALE ⚡
+Get 20% OFF on all cricket bats this weekend!
+</div>
+
+<div class="coupon-grid">
+
+<div class="coupon-card">
+
+<h2>WELCOME10</h2>
+
+<p>
+Get 10% OFF on your first order.
+</p>
+
+<button onclick="copyCoupon('WELCOME10')">
+Copy Coupon
+</button>
+
+</div>
+
+<div class="coupon-card">
+
+<h2>POWERPLAY15</h2>
+
+<p>
+15% OFF on all cricket shoes.
+</p>
+
+<button onclick="copyCoupon('POWERPLAY15')">
+Copy Coupon
+</button>
+
+</div>
+
+<div class="coupon-card">
+
+<h2>CRICKET20</h2>
+
+<p>
+₹500 OFF on orders above ₹3000.
+</p>
+
+<button onclick="copyCoupon('CRICKET20')">
+Copy Coupon
+</button>
+
+</div>
+
+<div class="coupon-card">
+
+<h2>JERSEY25</h2>
+
+<p>
+25% OFF on all jerseys.
+</p>
+
+<button onclick="copyCoupon('JERSEY25')">
+Copy Coupon
+</button>
+
+</div>
+
+</div>
+
+<div class="special-offers">
+
+<h1>🏆 Special Deals</h1>
+
+<div class="offer-boxes">
+
+<div class="offer-box">
+
+<h3>Bat Combo Pack</h3>
+
+<p>
+Buy any premium bat and get a free grip.
+</p>
+
+</div>
+
+<div class="offer-box">
+
+<h3>Team Kit Offer</h3>
+
+<p>
+Buy 5 jerseys and get 1 jersey free.
+</p>
+
+</div>
+
+<div class="offer-box">
+
+<h3>Free Delivery</h3>
+
+<p>
+Free shipping on orders above ₹2000.
+</p>
+
+</div>
+
+<div class="offer-box">
+
+<h3>Student Discount</h3>
+
+<p>
+Extra 5% OFF with valid student ID.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>PowerPlay Sports</h3>
+
+<p>
+Your Ultimate Sports Destination
+</p>
+
+</footer>
+
+<script>
+
+function copyCoupon(code){
+
+navigator.clipboard.writeText(code);
+
+const toast =
+document.getElementById("toast");
+
+toast.innerHTML =
+"🎉 " + code + " Copied Successfully";
+
+toast.classList.add("show");
+
+setTimeout(() => {
+
+toast.classList.remove("show");
+
+},3000);
+
+}
+
+</script>
+<div id="toast" class="toast">
+    Coupon Copied Successfully 🎉
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/user.js"></script>
+</body>
+</html>
